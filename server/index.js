@@ -65,8 +65,8 @@ app.get("/api/searchGif", async (req, res) => {
     console.log("[searchGif] Using API Key:", API_KEY.substring(0, 10) + "...");
     console.log("[searchGif] Using Search Engine ID:", SEARCH_ENGINE_ID);
 
-    // Search query: topic + gif
-    const searchQuery = `${topic} gif animated`;
+    // Search query: simple and effective
+    const searchQuery = `${topic} animated educational GIFs`;
     const url = `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(
       searchQuery
     )}&cx=${SEARCH_ENGINE_ID}&key=${API_KEY}&searchType=image&num=1`;
